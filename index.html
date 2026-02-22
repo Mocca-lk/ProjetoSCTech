@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site da Mari</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Mariana Gomes</h1>
         <!--Construindo a navegação do site - Menu-->
         <nav>
@@ -18,12 +19,8 @@
         </nav>
     </header>
     <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQExKJI9dTq1Pg/profile-displayphoto-scale_200_200/B4DZq19uIlKQAY-/0/1763989451002?e=1773273600&v=beta&t=F9GMIjgL4PMdl-5ZpgnrK86ice2Ul8s6vfesKeSc6_8" alt="Foto da Mari">
-            <article>
-                <p>Texto sobre mim
-                </p>
-            </article>
+        <h2 class="subtitulo">Sobre Mim</h2>
+        <img class="imagem-flutuante" src="https://media.licdn.com/dms/image/v2/D4D03AQExKJI9dTq1Pg/profile-displayphoto-scale_200_200/B4DZq19uIlKQAY-/0/1763989451002?e=1773273600&v=beta&t=F9GMIjgL4PMdl-5ZpgnrK86ice2Ul8s6vfesKeSc6_8" alt="Foto da Mari">
 
             <aside>
                 <h3>Habilidades</h3>
@@ -34,11 +31,12 @@
                 </ul>
             </aside>
     </section>
+    
     <section id="projetos">
-        <h2>Projetos</h2>
+        <h2 class="subtitulo">Projetos</h2>
         <article>
             <h3>Portfólio</h3>
-            <p>
+            <p class="in-line">
                 Este espaço documenta minha evolução como desenvolvedora, aplicando os fundamentos de engenharia de software 
                 adquiridos no curso técnico de ADS. O objetivo é demonstrar competência técnica na resolução de problemas reais,
                  utilizando arquiteturas modernas e boas práticas de desenvolvimento para criar aplicações web funcionais, 
@@ -84,9 +82,7 @@
     </section>
 
     <!--Rodapé do site-->
-    <footer>
-        <p>Todos os direitos Reservados.
-        </p>
+    <footer class="rodape">
         <section id="contato">
         <p>Possui um projeto interessante e deseja colocar no ar? <br> Me chame para uma consultoria e orçamento, sem compromisso.
         </p>
@@ -122,6 +118,8 @@
             
             <input type="submit" value="Enviar Mensagem">
         </form>
+         <p>Todos os direitos Reservados.
+        </p>
         </section>
     </footer>
 

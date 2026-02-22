@@ -1,0 +1,76 @@
+/*Usando seletor universal: *{} */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Seletor de tag: P é a tag representando qual elemento deve ser alterado na nossa página.*/
+p { /*Definindo as regras de estilo para os elementos selecionados*/
+    color: grey;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    /*Color é uma propriedade e depois de : colocamos o valor que deve ser atribuido àquela propriedade*/
+    /*O valor atribuído chamamos de declaração*/
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Seletor usando id das nossas seções por exemplo, mas pode ser de qualquer coisa com id*/
+#sobre {
+    background-color: beige;
+}
+
+#habilidades {
+   
+}
+
+/*Seletor de classe*/
+.rodape {
+    background-color: bisque;
+}
+
+/*Seletor de adjacente - além do item pega o que vem logo ao lado/a frente [+]
+exemplo: label + input {regras}*/
+
+/*Seletor de irmão - além do item pega o que vem logo ao lado/a frente e o depois [~]
+exemplo: p ~ a {regra} - mesmo que tivesse mais um link a na frente do 1, ele seria alterado também*/
+
+/*Seletor de filhos - além do item pega o que vem dentro do que foi selecionado, especificamente. Exemplo
+p > a {regra} tudo que tiver dentro de p será alterado comnforme a especificação feita[>]*/
+
+/*Seletor de descendentes - além do item pega o que vem logo ao lado/a frente [espaço ]
+exemplo div  a {regra} tudo o que estiver dentro de div, independente se é "neto", será alterado*/
+
+table {
+    color: grey;
+}
+
+.in-line{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.conteudo{
+    padding: 20px;
+}
+
+.imagem-flutuante{
+    float:left;
+}
+
+.subtitulo{
+    clear:both;
+}
+
+.header {
+    background-color: beige;
+    position: sticky; /*fica grudado no topo da página*/
+    position: -webkit-sticky; /*devido a diferença dos navegadores*/
+    top: 0; /*determinando que ele fique parado no topo posição 0*/
+    border: solid 1px lightgrey;
+    padding: 10px;
+    font-size: 20px;
+}
