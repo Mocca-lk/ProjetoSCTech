@@ -1,6 +1,7 @@
 /*Usando seletor universal: *{} */
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 /*Seletor de tag: P é a tag representando qual elemento deve ser alterado na nossa página.*/
@@ -18,19 +19,7 @@ a {
     text-decoration: none;
 }
 
-/*Seletor usando id das nossas seções por exemplo, mas pode ser de qualquer coisa com id*/
-#sobre {
-    background-color: beige;
-}
-
-#habilidades {
-   
-}
-
-/*Seletor de classe*/
-.rodape {
-    background-color: bisque;
-}
+/*Seletor usando id das nossas seções por exemplo, mas pode ser de qualquer coisa com id */
 
 /*Seletor de adjacente - além do item pega o que vem logo ao lado/a frente [+]
 exemplo: label + input {regras}*/
@@ -57,20 +46,55 @@ table {
     padding: 20px;
 }
 
-.imagem-flutuante{
-    float:left;
-}
-
 .subtitulo{
     clear:both;
 }
 
-.header {
-    background-color: beige;
+header {
+    background-color: #ccc;
+    color: white;
     position: sticky; /*fica grudado no topo da página*/
     position: -webkit-sticky; /*devido a diferença dos navegadores*/
     top: 0; /*determinando que ele fique parado no topo posição 0*/
     border: solid 1px lightgrey;
-    padding: 10px;
+    padding: 20px;
     font-size: 20px;
+    text-align: center;
+}
+
+
+.fixed {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.content {
+    background-color: #f0d3eccb;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0; /*vai ficar fixo na posição 0*/
+    width: 100%;
+}
+
+#contato {
+    text-align: center;
 }

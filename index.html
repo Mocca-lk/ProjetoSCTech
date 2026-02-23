@@ -2,13 +2,14 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site da Mari</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Configura a responsividade-->
+    <title>Portfólio da Mari</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <h1>Mariana Gomes</h1>
+        <img class="imagem-flutuante" src="https://media.licdn.com/dms/image/v2/D4D03AQExKJI9dTq1Pg/profile-displayphoto-scale_200_200/B4DZq19uIlKQAY-/0/1763989451002?e=1773273600&v=beta&t=F9GMIjgL4PMdl-5ZpgnrK86ice2Ul8s6vfesKeSc6_8" alt="Foto da Mari">
         <!--Construindo a navegação do site - Menu-->
         <nav>
             <ul>
@@ -18,9 +19,11 @@
             </ul>
         </nav>
     </header>
-    <section id="sobre">
+    <main>
+        <!--Seção sobre mim-->
+    <section class="content" id="sobre">
         <h2 class="subtitulo">Sobre Mim</h2>
-        <img class="imagem-flutuante" src="https://media.licdn.com/dms/image/v2/D4D03AQExKJI9dTq1Pg/profile-displayphoto-scale_200_200/B4DZq19uIlKQAY-/0/1763989451002?e=1773273600&v=beta&t=F9GMIjgL4PMdl-5ZpgnrK86ice2Ul8s6vfesKeSc6_8" alt="Foto da Mari">
+        
 
             <aside>
                 <h3>Habilidades</h3>
@@ -31,8 +34,10 @@
                 </ul>
             </aside>
     </section>
+    <!--Fim da Seção sobre mim-->
     
-    <section id="projetos">
+    <!--Seção de Projetos-->
+    <section class="content" id="projetos">
         <h2 class="subtitulo">Projetos</h2>
         <article>
             <h3>Portfólio</h3>
@@ -44,8 +49,10 @@
             </p>
         </article>
     </section>
+    <!--Fim da Seção Projetos-->
 
-    <section id="habilidades">
+    <!--Inicio da Seção Habilidades-->
+    <section class="content" id="habilidades">
         <h2>Habilidades e Tecnologias</h2>
         <table> 
             <thead> <!--Thead corresponde a linha de cabaçalho da tabela-->
@@ -80,10 +87,12 @@
 
         </table>
     </section>
+    <!--Fim da seção de habilidades-->
+    </main>
 
-    <!--Rodapé do site-->
-    <footer class="rodape">
-        <section id="contato">
+    <!--Seção de contato do site-->
+    
+        <section  class="content" id="contato">
         <p>Possui um projeto interessante e deseja colocar no ar? <br> Me chame para uma consultoria e orçamento, sem compromisso.
         </p>
         <!--Barra inferior com informações para contato/endereço para contato-->
@@ -118,10 +127,12 @@
             
             <input type="submit" value="Enviar Mensagem">
         </form>
-         <p>Todos os direitos Reservados.
-        </p>
         </section>
+        <footer>
+         <p>&copy; Todos os direitos Reservados.
+        </p>
+        
     </footer>
-
+    <div class="fixed"></div>
 </body>
 </html>
